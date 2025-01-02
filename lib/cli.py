@@ -1,13 +1,4 @@
 #!/usr/bin/env python3
-
-# from helpers import (
-#     exit_program, 
-#     list_customers
-# )
-# from models.customer import Customer
-# from models.vehicle import Vehicle
-# from models.service import Service
-
 from helpers import exit_program
 from helpers_customer import customer_menu
 from helpers_vehicle import vehicle_menu
@@ -36,4 +27,7 @@ def main_menu():
             print("Invalid choice")
 
 if __name__ == '__main__':
+    print(' ')
+    print('Welcome to Lube Lab Express, the quickest & easiest oil change shop on Python')
+    print(' ')
     main_menu()

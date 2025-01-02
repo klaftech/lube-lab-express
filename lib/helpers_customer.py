@@ -51,7 +51,6 @@ def customer_details(customer):
         print('Customer Profile: ')
         print(f'    Name: {customer.name}')
         print(f'    Address: {customer.address}')
-        #print(f'    Balance: $ ---')
         print(f' ')
         
         vehicles = customer.vehicles()
