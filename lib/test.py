@@ -5,11 +5,8 @@ from models.customer import Customer
 from models.vehicle import Vehicle
 from models.service import Service
 
-def build_tables():
-    Customer.drop_table()
-    Customer.create_table()
-    Vehicle.drop_table()
-    Vehicle.create_table()
+import vehicle_makes
+from vehicle_makes import get_makes_and_models
 
 #build_tables()
 #print("tables have been reset")
