@@ -61,7 +61,7 @@ class Service:
 
     @service_date.setter
     def service_date(self, service_date):
-        if isinstance(service_date, str) and len(service_date):
+        if isinstance(service_date, str) and len(service_date) > 0:
             if self.validate_date(service_date):
                 self._service_date = service_date
             else:

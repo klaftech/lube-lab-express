@@ -38,7 +38,7 @@ class Vehicle:
 
     @make.setter
     def make(self, make):
-        if isinstance(make, str) and len(make):
+        if isinstance(make, str) and len(make) > 0:
             self._make = make
         else:
             raise ValueError(
@@ -51,7 +51,7 @@ class Vehicle:
 
     @model.setter
     def model(self, model):
-        if isinstance(model, str) and len(model):
+        if isinstance(model, str) and len(model) > 0:
             self._model = model
         else:
             raise ValueError(

@@ -18,7 +18,7 @@ class Customer:
 
     @name.setter
     def name(self, name):
-        if isinstance(name, str) and len(name):
+        if isinstance(name, str) and len(name) > 0:
             self._name = name
         else:
             raise ValueError(
@@ -31,7 +31,7 @@ class Customer:
 
     @address.setter
     def address(self, address):
-        if isinstance(address, str) and len(address):
+        if isinstance(address, str) and len(address) > 0:
             self._address = address
         else:
             raise ValueError(
