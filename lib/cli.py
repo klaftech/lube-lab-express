@@ -11,7 +11,7 @@ def main_menu():
         print("********************************************")
         print("1. Customer Management")
         print("2. Vehicle Management")
-        print("3. Add Service Ticket")
+        print("3. Add Service Record")
         print("x. Exit the program")
         
         main_menu_choice = input("> ")
