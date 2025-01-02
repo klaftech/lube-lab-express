@@ -32,14 +32,31 @@ def vehicle_find_by_plate():
                 f'Vehicle with license plate "{plate}" not found')
 
 def vehicle_add():
+    import os
+    from car_api import get_makes_and_models
+    from simple_term_menu import TerminalMenu
+    
     while True:
         customer_id = input("Enter owner's ID: ")
         # since we must convert inputs to integers before creating instance, must validate value
         if not customer_id:
             print("You must enter the owner's ID")
             continue
-        make = input("Enter vehicle's make: ")
-        model = input("Enter vehicle's model: ")
+        
+        print("Loading vehicle list...")
+        vehicle_master = get_makes_and_models()
+        vehicle_makes = [f'{makes}' for makes in vehicle_master]
+        
+        makes_menu = TerminalMenu(vehicle_makes, search_key=None, search_highlight_style=None, title="Vehicle Make")
+        makes_menu_entry_index = makes_menu.show()
+        make = makes_menu.chosen_menu_entry
+        print(f'Make: {make}')
+        
+        models_menu = TerminalMenu(vehicle_master[make], search_key=None, search_highlight_style=None, title="Vehicle Model")
+        models_menu_entry_index = models_menu.show()
+        model = models_menu.chosen_menu_entry
+        print(f'Model: {model}')
+
         year = input("Enter vehicle's year: ")
         if not year:
             print("You must enter the vehicle's year")

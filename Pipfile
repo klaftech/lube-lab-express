@@ -5,8 +5,12 @@ name = "pypi"
 
 [packages]
 ipdb = "*"
+requests-futures = "*"
+requests = "*"
+simple-term-menu = "*"
 
 [dev-packages]
 
 [requires]
+python_version = "3.8"
 python_full_version = "3.8.13"
