@@ -20,4 +20,4 @@ This is a Python CLI project demonstrating functionality for a fictitious oil ch
 
 ## Credits:
 [Vehicle Data - autotraders.co.uk](https://www.autotrader.co.uk/)   
-[ASCII Invoice](https://gist.github.com/defuse/01a9d0ba5ce3b4083810)
+[ASCII Invoice Template](https://gist.github.com/defuse/01a9d0ba5ce3b4083810)
