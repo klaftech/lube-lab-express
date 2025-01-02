@@ -1,2 +1,4 @@
 .venv
 Pipfile.lock
+lib/__pycache__
+lib/models/__pycache__

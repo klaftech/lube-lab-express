@@ -83,14 +83,14 @@ def customer_menu():
         print("3. Add new customer")
         print("z. Return to main menu")
         print("x. Exit the program")
-        customer_menu_input = input('> ')
-        if customer_menu_input == "1":
+        menu_input = input('> ')
+        if menu_input == "1":
             customer_find_by_name()
-        elif customer_menu_input == "2":
+        elif menu_input == "2":
             customer_list_all()
-        elif customer_menu_input == "3":
+        elif menu_input == "3":
             customer_add()
-        elif customer_menu_input.lower() == "z":
+        elif menu_input.lower() == "z":
             break
-        elif customer_menu_input.lower() == "x":
+        elif menu_input.lower() == "x":
             exit_program()

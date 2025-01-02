@@ -10,12 +10,8 @@
 
 from helpers import exit_program
 from helpers_customer import customer_menu
-
-
-def vehicle_menu():
-    pass
-def service_add():
-    pass
+from helpers_vehicle import vehicle_menu
+from helpers_service import service_add
 
 def main_menu():
     while True:
